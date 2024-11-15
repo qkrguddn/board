@@ -37,7 +37,8 @@ const Edit = () => {
     }
     return (
         <div>
-            <Link to="/">메인화면</Link> <br></br>
+            <Link to="/"><img src={process.env.PUBLIC_URL + '/rds.jpg'} width="90" height="50"/>
+            </Link> <br></br>
             <div className="container">
                 <div className="row">
                     <div className="card col-md-6 offset-md-3 offset-md-3">

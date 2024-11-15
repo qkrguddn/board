@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+
+
 const Post = () => {
 
   let navigate = useNavigate();
@@ -32,7 +33,8 @@ const Post = () => {
   };
   return (
     <div>
-      <Link to="/">메인화면</Link>
+      <Link to="/"><img src={process.env.PUBLIC_URL + '/rds.jpg'} width="90" height="50"/>
+      </Link>
       <div className="container">
         <div className="row">
           <div className="card col-md-6 offset-md-3 offset-md-3">
